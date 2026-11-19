@@ -1,18 +1,9 @@
 .skills {
   padding-top: 120px;
-  &__title {
-    position: relative;
-    text-align: center;
-    @include before_circle;
-    &:before {
-      top: -6px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
   &__title-fz14 {
     padding-top: 120px;
-    padding-left: 30px;
+    left: -20px;
+    margin-left: -60px;
   }
   &__subtitle {
     text-align: center;
@@ -32,21 +23,22 @@
   &__item {
     position: relative;
     &-head {
-      position: relative;
-      padding: 45px 0 0 100px;
+      position: absolute;
+      padding: 15px 0 0 100px;
       h4 {
         margin-bottom: 0;
       }
     }
     &-body {
-      padding-left: 30px;
+      padding-left: 0px;
       margin-top: 12px;
+      margin-left: -60px;
     }
     &-icon {
       position: absolute;
       img {
         position: absolute;
-        left: 30px;
+        left: -60px;
         top: 30px;
       }
     }
@@ -68,7 +60,7 @@
     row-gap: 35px;
     &-item {
       display: grid;
-      grid-template: minmax(21px auto) 14px /200px 35px;
+      grid-template: minmax(21px, auto) 14px /200px 35px;
       column-gap: 45px;
       row-gap: 35px;
       align-content: space-between;
@@ -92,7 +84,6 @@
         display: block;
         height: 100%;
         background-color: $main-color;
-        border-radius: 4px;
       }
     }
   }
