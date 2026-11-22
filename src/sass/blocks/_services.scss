@@ -1,0 +1,27 @@
+.services {
+  padding-top: 60px;
+  min-width: 1040px;
+  &__wrapper {
+    padding: 60px 37px 0 37px;
+    display: grid;
+    grid-template-columns: repeat(2, 520px);
+    column-gap: 45px;
+    row-gap: 13px;
+  }
+  &__items {
+    min-width: 520px;
+  }
+  &__item {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: $main-color;
+      border-radius: 100%;
+      left: -22px;
+      top: 4px;
+    }
+  }
+}
