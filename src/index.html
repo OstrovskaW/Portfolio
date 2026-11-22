@@ -649,18 +649,24 @@
             <div class="title title__fz14 contacts__text">Or leave your details, and I'll contact you</div>
             <form action="#" class="contacts__form">
               <div class="contacts__input">
-                <input id="name" type="text">
+                <input required id="name" type="text">
                 <label for="name">Your name</label>
               </div>
               <div class="contacts__input">
-                <input id="name" type="text">
-                <label for="name">Your email</label>
+                <input required id="email" type="text">
+                <label for="email">Your email</label>
               </div>
               <div class="contacts__textarea">
                   <textarea name="text" id="text"></textarea>
                   <label for="text">Your message</label>
                 </div>
-                <div><button class="btn contacts__btn">Send the message</button></div>
+                <div class="contacts__triggers">
+                  <button class="btn contacts__btn">Send the message</button>
+                  <div class="contacts__policy">
+                    <input required type="checkbox">
+                    <span> I agree to the <a href="/policy.html"> Privacy Policy </a> and consent to the processing of my personal data.</span>
+                  </div>
+                </div>
               </div>
 
             </form>
